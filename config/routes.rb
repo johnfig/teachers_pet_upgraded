@@ -1,4 +1,13 @@
 TeachersPetUpgraded::Application.routes.draw do
+  resources :courses
+  resources :teachers
+  resources :students
+
+  match '/courses',       to: "courses#index"
+  match '/students',      to: "students#index"
+  match '/teachers',      to: "teachers#index"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
