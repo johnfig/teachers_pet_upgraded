@@ -5,6 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Course.delete_all
+Course.create([
+        { name: 'Geometry' },
+        { name: 'English' },
+        { name: 'History' },
+        { name: 'Science' },
+        { name: 'Pottery' },
+        { name: 'Calculus' }
+])
+
 Teacher.delete_all
 Teacher.create([
         { name: 'Mr. Allen' },

@@ -19,7 +19,18 @@ end
 
 gem 'jquery-rails'
 
-group :test do
+group :development, :test do
+	gem 'database_cleaner'
+	gem 'guard-spork'
+  gem 'guard-rspec'
+  gem 'guard-cucumber'
+  gem 'cucumber'
+  gem 'cucumber-rails', :require => false
+  gem 'cucumber-websteps'
+  gem 'capybara'
+  gem 'capybara-webkit'
+  gem 'capybara-screenshot'
+  gem 'factory_girl_rails'
 	gem 'debugger'
 end
 

@@ -12,12 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <label for="student_name">Name</label><br />
+    <input id="student_name" name="student[name]" type="text"/>
   </div>
   <div class="field">
     <%= f.label :grade %><br />
-    <%= f.number_field :grade %>
+    <%= f.text_area(:grade, placeholder: "What grade are you in?", size: "30x6") %>
+  </div>
+  <div class="field">
+    <%= f.label "Start Date" %><br />
+    <%= f.datetime_select(:start_date, selected: Date.today) %>
+  </div>
+  <div class="field">
+    <%= f.label 'End Date' %><br />
+    <%= f.date_select(:end_date, selected: Date.today) %>
   </div>
   <div class="actions">
     <%= f.submit %>

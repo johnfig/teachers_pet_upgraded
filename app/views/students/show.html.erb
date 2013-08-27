@@ -10,6 +10,16 @@
   <%= @student.grade %>
 </p>
 
+<p>
+  <b>Start Date:</b>
+  <%= @student.start_date %>
+</p>
+
+<p>
+  <b>End Date:</b>
+  <%= @student.end_date %>
+</p>
+
 
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
